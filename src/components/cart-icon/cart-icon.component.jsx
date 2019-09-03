@@ -7,10 +7,10 @@ import './cart-icon.styles.scss';
 
 const CartIcon = ({ toggleCartHidden }) => (
     <div className='cart-icon' onClick={toggleCartHidden}>
-        <ShoppingIcon className='shopping-icon'/>
-        <span className='item-count'>0</span>
+      <ShoppingIcon className='shopping-icon' />
+      <span className='item-count'>0</span>
     </div>
-);
+  );
 
 const mapDispatchToProps = dispatch => ({
     toggleCartHidden: () => dispatch(toggleCartHidden())
